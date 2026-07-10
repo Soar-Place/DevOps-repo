@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureLife Insurance</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navigation */
+nav{
+    background:#003366;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:#ffd700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+/* Hero Section */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,51,102,.7),rgba(0,51,102,.7)),
+    url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.hero a{
+    display:inline-block;
+    background:#ffd700;
+    color:#003366;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero a:hover{
+    background:white;
+}
+
+/* Services */
+
+.services{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.services h2{
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    width:280px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+/* Why Choose Us */
+
+.why{
+    background:#003366;
+    color:white;
+    padding:70px 10%;
+    text-align:center;
+}
+
+.why h2{
+    margin-bottom:25px;
+    font-size:38px;
+}
+
+.features{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:35px;
+}
+
+.feature{
+    width:250px;
+}
+
+.feature h3{
+    color:#ffd700;
+    margin-bottom:10px;
+}
+
+/* CTA */
+
+.cta{
+    padding:70px 8%;
+    text-align:center;
+    background:#e9f2ff;
+}
+
+.cta h2{
+    margin-bottom:20px;
+}
+
+.cta a{
+    display:inline-block;
+    margin-top:20px;
+    background:#003366;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+.cta a:hover{
+    background:#001d3d;
+}
+
+/* Contact */
+
+.contact{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+/* Footer */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<h2>SecureLife</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Claims</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Protect What Matters Most</h1>
+
+<p>Reliable insurance solutions for individuals, families, and businesses.</p>
+
+<a href="#">Get a Free Quote</a>
+
+</div>
+
+</section>
+
+<section class="services">
+
+<h2>Our Insurance Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Life Insurance</h3>
+<p>Protect your loved ones with flexible life insurance plans designed for long-term financial security.</p>
+</div>
+
+<div class="card">
+<h3>Health Insurance</h3>
+<p>Affordable healthcare coverage with access to quality medical services and emergency support.</p>
+</div>
+
+<div class="card">
+<h3>Auto Insurance</h3>
+<p>Comprehensive vehicle protection covering accidents, theft, and third-party liabilities.</p>
+</div>
+
+<div class="card">
+<h3>Home Insurance</h3>
+<p>Safeguard your home and valuable possessions against unexpected events and natural disasters.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="why">
+
+<h2>Why Choose SecureLife?</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Trusted Protection</h3>
+<p>Reliable insurance solutions backed by years of industry experience.</p>
+</div>
+
+<div class="feature">
+<h3>24/7 Support</h3>
+<p>Our customer support team is available anytime you need assistance.</p>
+</div>
+
+<div class="feature">
+<h3>Fast Claims</h3>
+<p>Simple, transparent, and efficient claims processing.</p>
+</div>
+
+<div class="feature">
+<h3>Affordable Plans</h3>
+<p>Flexible coverage options tailored to your budget and lifestyle.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Get Covered Today</h2>
+
+<p>Request a free insurance quote and let us help you protect your future.</p>
+
+<a href="#">Request a Quote</a>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>Email:</strong> info@securelifeinsurance.com</p>
+
+<p><strong>Phone:</strong> +234 800 123 4567</p>
+
+<p><strong>Office:</strong> Victoria Island, Lagos, Nigeria</p>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 SecureLife Insurance. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
